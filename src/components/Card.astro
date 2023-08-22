@@ -1,13 +1,15 @@
+---
+interface Props {
+	title: string
+}
 
+const { title } = Astro.props
 ---
 
-titulo:
-imagen:
-
-
----
-
-<a class='hover:scale-110 hover:shadow-2xl inline-block contrast-150 transition-all' href='/project-1-detail'>
+<a
+	class='hover:scale-110 hover:shadow-2xl inline-block contrast-150 transition-all'
+	href='/project-1-detail'
+>
 	<img
 		class='aspect-[270/410] h-full w-full object-cover rounded-xl'
 		src='https://placehold.co/270x410/F84/FFF?font=roboto&text=/'
