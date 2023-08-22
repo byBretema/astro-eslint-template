@@ -4,92 +4,43 @@ import Card from '../components/Card.astro'
 ---
 
 <Layout title='Welcome to Astro.'>
-	<main>
-		<h1>Welcome to <span class='text-gradient'>AAAAAAAAAAAAAAAAA</span></h1>
-		<p class='instructions'>
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role='list' class='link-card-grid'>
-			<Card
-				href='https://docs.astro.build/'
-				title='Documentation'
-				body='Learn how Astro works and explore the official API docs.'
-			/>
-			<Card
-				href='https://astro.build/integrations/'
-				title='Integrations'
-				body='Supercharge your project with new frameworks and libraries.'
-			/>
-			<Card
-				href='https://astro.build/themes/'
-				title='Themes'
-				body='Explore a galaxy of community-built starter themes.'
-			/>
-			<Card
-				href='https://astro.build/chat/'
-				title='Community'
-				body='Come say hi to our amazing Discord community. ❤️'
-			/>
+	<main class='m-auto max-w-4xl'>
+		<h1 class='mt-5 mb-10 text-[37px] font-black uppercase text-center'>
+			Awesome <span class='-mt-5 block text-7xl'>Title</span>
+		</h1>
+
+		<ul class='grid grid-cols-2 md:grid-cols-3 gap-3'>
+			<li>
+				<a class='hover:scale-110 hover:shadow-2xl inline-block contrast-150 transition-all' href='/project-1-detail'>
+					<img
+						class='aspect-[270/410] h-full w-full object-cover rounded-xl'
+						src='https://placehold.co/270x410/F84/FFF?font=roboto&text=/'
+						alt='Type a nice alt about the img'
+					/>
+				</a>
+			</li>
+			<li>
+				<a class='hover:scale-110 hover:shadow-2xl inline-block contrast-150 transition-all' href='/project-1-detail'>
+					<img
+						class='aspect-[270/410] h-full w-full object-cover rounded-xl'
+						src='https://placehold.co/270x410/F84/FFF?font=roboto&text=/'
+						alt='Type a nice alt about the img'
+					/>
+				</a>
+			</li>
+			<li>
+				<a class='hover:scale-110 hover:shadow-2xl inline-block contrast-150 transition-all' href='/project-1-detail'>
+					<img
+						class='aspect-[270/410] h-full w-full object-cover rounded-xl'
+						src='https://placehold.co/270x410/F84/FFF?font=roboto&text=/'
+						alt='Type a nice alt about the img'
+					/>
+				</a>
+			</li>
 		</ul>
 	</main>
 </Layout>
 
 <style>
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
-	}
-	.astro-a {
-		position: absolute;
-		top: -32px;
-		left: 50%;
-		transform: translatex(-50%);
-		width: 220px;
-		height: auto;
-		z-index: -1;
-	}
-	h1 {
-		font-size: 4rem;
-		font-weight: 700;
-		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		margin: 2rem 0;
-		border: 1px solid rgba(var(--accent-light), 25%);
-		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
-		padding: 1.5rem;
-		border-radius: 8px;
-	}
-	.instructions code {
-		font-size: 0.8em;
-		font-weight: bold;
-		background: rgba(var(--accent-light), 12%);
-		color: rgb(var(--accent-light));
-		border-radius: 4px;
-		padding: 0.3em 0.4em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent-light));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 2rem;
-		padding: 0;
-	}
+
 </style>
