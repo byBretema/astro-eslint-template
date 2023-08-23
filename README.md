@@ -8,7 +8,7 @@ _<span style="color:#BBB">A template by <span style="color:#777">@DaBretema</spa
 
 ### Short path
 
-1. Use Github Template to create a new repository from this
+1. Use Github Template to create a [new repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) from this
 
    ![template-screenshot](./docs/github-template.png)
 
