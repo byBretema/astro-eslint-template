@@ -1,4 +1,4 @@
-# Astro Starter Kit <span style="color:orange">w/ EsLint</span>
+# Awesome Astro: _now with <span style="color:orange">EsLint</span>_
 
 _<span style="color:#BBB">A template by <span style="color:#777">@DaBretema</span></span>_
 
