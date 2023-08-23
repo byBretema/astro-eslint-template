@@ -6,13 +6,33 @@ _<span style="color:#BBB">A template by <span style="color:#777">@DaBretema</spa
 
 ## 🙋‍♂️ How to use
 
+### Short path
+
+1. Use Github Template to create a new repository from this
+
+   ![template-screenshot](./docs/github-template.png)
+
+2. Clone **YOUR** repo and begin to code!
+
+   ```bash
+   # Clone
+   git clone git@github.com:<your-user>/<your-repo>.git
+
+   # Install packages
+   pnpm install
+
+   # Happy coding!
+   ```
+
+### Long path
+
 ```bash
 # Clone
 git clone git@github.com:DaBretema/my-website.git --depth 1
 cd my-website
 rm -rf .git
 
-# Set up your repo
+# Set up your repo (first you have to create your repo on github)
 git remote add origin git@github.com:<your-user>/<your-repo>.git
 git add -A
 git commit -m "my awesome first commit"
