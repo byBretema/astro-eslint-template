@@ -20,7 +20,6 @@ const { title } = Astro.props;
     <slot />
     <style is:global>
       :root {
-        --text: 34, 34, 34; /* #222 */
         --accent: 255, 136, 68; /* #F84 */
         --accent-light: 255, 238, 204; /* #FEC */
         --accent-dark: 68, 51, 34; /* #432 */
@@ -34,7 +33,7 @@ const { title } = Astro.props;
         );
       }
       * {
-        color: rgb(var(--text), 0.8);
+        color: rgb(var(--accent-dark), 1);
       }
       html {
         font-family: system-ui, sans-serif;
@@ -90,9 +89,6 @@ const { title } = Astro.props;
       }
       .bg-accent-dark-75 {
         background-color: rgb(var(--accent-dark), 0.75);
-      }
-      .fg-text {
-        color: rgb(var(--text));
       }
       .fg-accent {
         color: rgb(var(--accent));

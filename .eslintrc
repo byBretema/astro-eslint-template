@@ -42,7 +42,14 @@
 			"warn",
 			"prefer-single"
 		],
-		"eol-last": "off"
+		"eol-last": "off",
+		"max-len": [
+			"warn",
+			{
+				"code": 80,
+				"ignoreComments": true
+			}
+		]
 	},
 	"overrides": [
 		{

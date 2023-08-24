@@ -9,7 +9,7 @@ const YUOUR_HANDLE = "<Your Github Handle>";
 
 <Layout title="Awesome Astro!">
   <main class="m-auto max-w-4xl">
-    <h1 class="pt-5 pb-10 text-[37px] font-black uppercase text-center">
+    <h1 class="pt-7 pb-10 text-[37px] font-black uppercase text-center">
       Awesome <span class="-mt-5 block text-7xl">Title</span>
     </h1>
 
@@ -27,10 +27,16 @@ const YUOUR_HANDLE = "<Your Github Handle>";
       <mark> boundaries of artistic expression.</mark> If you have a sense of humor
       and an appreciation for the absurd, then you will be thoroughly entertained
       by my work.
-      <i class="mt-2 block font-semibold opacity-50">
-        Please do not hesitate to contact me if you have any questions or would
-        like to commission a piece.
-      </i>
+      <span class="ml-2 italic opacity-70">
+        <span class="font-extralight"> Nevertheless, kudos to</span>
+        <a
+          class="inline-block underline hover:scale-105 transition-transform"
+          href="https://bard.google.com/"
+        >
+          Bard</a
+        >
+        <span class="font-extralight"> for generate this text.</span>
+      </span>
     </p>
 
     <div id="portfolio" class="grid gap-5 grid-cols-2 md:grid-cols-3">
@@ -46,8 +52,8 @@ const YUOUR_HANDLE = "<Your Github Handle>";
       <span class="opacity-50">Made with</span> 🧡 <span class="opacity-50"
         >by</span
       >
-      <b class="opacity-90">{`@${YUOUR_HANDLE}`}</b>
     </p>
+    <b class="opacity-90">{`@${YUOUR_HANDLE}`}</b>
   </main>
 </Layout>
 
