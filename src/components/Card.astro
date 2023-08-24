@@ -1,21 +1,30 @@
 ---
-interface Props {
+import { PLACEHOLDER_W, PLACEHOLDER_H } from '../consts/Card.js'
+
+export interface Props {
+	id: string
 	title: string
+	img: string
 }
 
-const { title } = Astro.props
+const { id, title, img } = Astro.props
 ---
 
-<a
-	class='hover:scale-105 hover:shadow-2xl hover:contrast-150 inline-block transition-all card-rounded'
-	href='/project-1-detail'
->
-	<img
-		class='aspect-[270/410] h-full w-full object-cover card-rounded'
-		src='https://placehold.co/270x410/F84/FEC?font=roboto&text=/'
-		alt='Type a nice alt about the img'
-	/>
-</a>
+<div class='flex flex-col justify-center'>
+	<a
+		class='hover:scale-105 hover:shadow-2xl hover:contrast-150 inline-block transition-all card-rounded'
+		href={`/${id}`}
+	>
+		<img
+			class={`aspect-[${PLACEHOLDER_W}/${PLACEHOLDER_H}] h-full w-full object-cover card-rounded`}
+			src={img}
+			alt={`Type a nice alt about the ${title}`}
+		/>
+		<span class='block text-center p-2 font-bold -translate-y-28 bg-accent-dark-75 fg-accent-light'>
+			{title}
+		</span>
+	</a>
+</div>
 
 <style>
 	.card-rounded {

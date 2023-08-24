@@ -1,6 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro'
 import Card from '../components/Card.astro'
+
+import { PLACEHOLDER_IMG } from '../consts/Card.js'
 ---
 
 <Layout title='Awesome Astro!'>
@@ -10,29 +12,30 @@ import Card from '../components/Card.astro'
 		</h1>
 
 		<p class='pb-10 text-lg'>
-			<span class='hard-mark-text'>Lorem ipsum dolor sit amet</span>
-			consectetur adipisicing elit. Blanditiis consectetur voluptates nemo distinctio minima quis accusantium
-			ratione culpa delectus enim inventore, alias ipsam unde soluta
-			<span class='soft-mark-text'>ad ab adipisci iusto voluptate?</span>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur labore tempore similique,
-			est nam magni. <mark> Qui vero pariatur vel impedit cumque, dolores aliquid.</mark> Cum necessitatibus
-			nulla, commodi hic iure quaerat? Lorem ipsum dolor sit amet consectetur, adipisicing elit.Eaque
-			est magnam dolorum minima impedit vero.
-			<mark>Dolore a nihil</mark> ullam numquam amet atque corporis sapiente sint, possimus magni repellat
-			assumenda expedita.
+			<span class='hard-mark-text'>Lorem ipsum dolor sit amet</span>consectetur adipisicing elit. Blanditiis consectetur
+			voluptates nemo distinctio minima quis accusantium ratione culpa delectus enim inventore, alias ipsam unde soluta<span
+				class='soft-mark-text'>ad ab adipisci iusto voluptate?</span
+			>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur labore tempore similique, est nam magni. <mark
+			>
+				Qui vero pariatur vel impedit cumque, dolores aliquid.</mark
+			> Cum necessitatibus nulla, commodi hic iure quaerat? Lorem ipsum dolor sit amet consectetur, adipisicing elit.Eaque
+			est magnam dolorum minima impedit vero.<mark>Dolore a nihil</mark> ullam numquam amet atque corporis sapiente sint,
+			possimus magni repellat assumenda expedita.
 		</p>
 
-		<ul class='grid grid-cols-2 md:grid-cols-3 gap-3'>
-			<li>
-				<Card title='AAA' />
-			</li>
-			<li>
-				<Card title='AAA' />
-			</li>
-			<li>
-				<Card title='AAA' />
-			</li>
-		</ul>
+		<div class='grid gap-5 grid-cols-2 md:grid-cols-3'>
+			<Card id='awes-proj-1' title='Awesome Project #1' img={PLACEHOLDER_IMG} />
+			<Card id='awes-proj-2' title='Awesome Project #2' img={PLACEHOLDER_IMG} />
+			<Card id='awes-proj-3' title='Awesome Project #3' img={PLACEHOLDER_IMG} />
+			<Card id='cool-proj-1' title='Cool Project #1' img={PLACEHOLDER_IMG} />
+			<Card id='cool-proj-2' title='Cool Project #2' img={PLACEHOLDER_IMG} />
+			<Card id='cool-proj-3' title='Cool Project #3' img={PLACEHOLDER_IMG} />
+		</div>
+
+		<p class='text-center mt-[4rem]'>
+			<span class='opacity-50'>Made with</span> 🧡 <span class='opacity-50'>by</span>
+			<b class='opacity-90'>{'@<YourCoolHandle>'}</b>
+		</p>
 	</main>
 </Layout>
 
