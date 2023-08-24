@@ -1,42 +1,54 @@
 ---
-import Layout from '../layouts/Layout.astro'
-import Card from '../components/Card.astro'
+import Layout from "../layouts/Layout.astro";
+import Card, { PLACEHOLDER_IMG } from "../components/Card.astro";
 
-import { PLACEHOLDER_IMG } from '../consts/Card.js'
+const YOUR_NAME = "<Your Name>";
+const YOUR_LOCATION = "<Your City>";
+const YUOUR_HANDLE = "<Your Github Handle>";
 ---
 
-<Layout title='Awesome Astro!'>
-	<main class='m-auto max-w-4xl'>
-		<h1 class='pt-5 pb-10 text-[37px] font-black uppercase text-center'>
-			Awesome <span class='-mt-5 block text-7xl'>Title</span>
-		</h1>
+<Layout title="Awesome Astro!">
+  <main class="m-auto max-w-4xl">
+    <h1 class="pt-5 pb-10 text-[37px] font-black uppercase text-center">
+      Awesome <span class="-mt-5 block text-7xl">Title</span>
+    </h1>
 
-		<p class='pb-10 text-lg'>
-			<span class='hard-mark-text'>Lorem ipsum dolor sit amet</span>consectetur adipisicing elit. Blanditiis consectetur
-			voluptates nemo distinctio minima quis accusantium ratione culpa delectus enim inventore, alias ipsam unde soluta<span
-				class='soft-mark-text'>ad ab adipisci iusto voluptate?</span
-			>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur labore tempore similique, est nam magni. <mark
-			>
-				Qui vero pariatur vel impedit cumque, dolores aliquid.</mark
-			> Cum necessitatibus nulla, commodi hic iure quaerat? Lorem ipsum dolor sit amet consectetur, adipisicing elit.Eaque
-			est magnam dolorum minima impedit vero.<mark>Dolore a nihil</mark> ullam numquam amet atque corporis sapiente sint,
-			possimus magni repellat assumenda expedita.
-		</p>
+    <p id="about" class="pb-10 text-lg">
+      <mark>Greetings, mortals!</mark> Welcome to my humble abode, where you may
+      gaze upon the glorious works of art created by yours truly,
+      <i class="font-bold opacity-60">{YOUR_NAME}</i>. I am a artist of
+      unmatched talent and taste, based in the most cultured city in the world,
+      <i class="font-bold opacity-60">{YOUR_LOCATION}</i>. My work explores a
+      vast array of themes, from the sublime to the ridiculous, and is inspired
+      by the most absurd and nonsensical sources imaginable. I use
+      <mark>bold colors and shapes</mark> in my work to create a sense of awe and
+      wonder, and I am constantly experimenting with new techniques and materials
+      in order to push the
+      <mark> boundaries of artistic expression.</mark> If you have a sense of humor
+      and an appreciation for the absurd, then you will be thoroughly entertained
+      by my work.
+      <i class="mt-2 block font-semibold opacity-50">
+        Please do not hesitate to contact me if you have any questions or would
+        like to commission a piece.
+      </i>
+    </p>
 
-		<div class='grid gap-5 grid-cols-2 md:grid-cols-3'>
-			<Card id='awes-proj-1' title='Awesome Project #1' img={PLACEHOLDER_IMG} />
-			<Card id='awes-proj-2' title='Awesome Project #2' img={PLACEHOLDER_IMG} />
-			<Card id='awes-proj-3' title='Awesome Project #3' img={PLACEHOLDER_IMG} />
-			<Card id='cool-proj-1' title='Cool Project #1' img={PLACEHOLDER_IMG} />
-			<Card id='cool-proj-2' title='Cool Project #2' img={PLACEHOLDER_IMG} />
-			<Card id='cool-proj-3' title='Cool Project #3' img={PLACEHOLDER_IMG} />
-		</div>
+    <div id="portfolio" class="grid gap-5 grid-cols-2 md:grid-cols-3">
+      <Card id="awes-proj-1" title="Awesome Project #1" img={PLACEHOLDER_IMG} />
+      <Card id="awes-proj-2" title="Awesome Project #2" img={PLACEHOLDER_IMG} />
+      <Card id="awes-proj-3" title="Awesome Project #3" img={PLACEHOLDER_IMG} />
+      <Card id="cool-proj-1" title="Cool Project #1" img={PLACEHOLDER_IMG} />
+      <Card id="cool-proj-2" title="Cool Project #2" img={PLACEHOLDER_IMG} />
+      <Card id="cool-proj-3" title="Cool Project #3" img={PLACEHOLDER_IMG} />
+    </div>
 
-		<p class='text-center mt-[4rem]'>
-			<span class='opacity-50'>Made with</span> 🧡 <span class='opacity-50'>by</span>
-			<b class='opacity-90'>{'@<YourCoolHandle>'}</b>
-		</p>
-	</main>
+    <p class="text-center pt-[4rem] pb-[2rem]">
+      <span class="opacity-50">Made with</span> 🧡 <span class="opacity-50"
+        >by</span
+      >
+      <b class="opacity-90">{`@${YUOUR_HANDLE}`}</b>
+    </p>
+  </main>
 </Layout>
 
 <style>
