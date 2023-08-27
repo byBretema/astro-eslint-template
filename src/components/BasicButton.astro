@@ -1,0 +1,10 @@
+---
+const { link, text } = Astro.props;
+---
+
+<a
+	href={`${link}`}
+	class="p-2 font-bold rounded fg-accent-light bg-accent opacity-60 hover:opacity-100 transition-opacity text-center"
+>
+	{`${text}`}
+</a>

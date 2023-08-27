@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { Projects } from "../data/Projects.js";
+import BasicButton from "../components/BasicButton.astro";
 
 export async function getStaticPaths() {
 	return Projects.map((item) => {
@@ -21,24 +22,31 @@ if (!info) {
 ---
 
 <Layout title={`Project ${Project}`}>
-	<main class="m-auto max-w-4xl min-h-screen grid grid-cols-2">
-		<img
-			class={`aspect-[3.0/3.5] h-full w-full p-14 object-cover card-rounded`}
-			src={info.img}
-			alt={`Cover of the project ${info.title}`}
-		/>
-
+	<main
+		class="m-auto max-w-4xl min-h-screen grid grid-cols-2 items-center gap-32"
+	>
 		<div>
+			<a class="rounded">
+				<img
+					class={`aspect-[3.0/3.5] h-full w-full object-cover cover-rounded`}
+					src={info.img}
+					alt={`Cover of the project ${info.title}`}
+				/>
+			</a>
+		</div>
+
+		<div class="flex flex-col justify-center">
 			<h2 class="font-black text-4xl">{info.title}</h2>
-			<p class="mt-10 font-thin text-xl">{info.desc}</p>
+			<p class="my-10 font-thin text-xl">{info.desc}</p>
+			<BasicButton link="/" text="Back Home!" />
 		</div>
 	</main>
 </Layout>
 
-<style>
+<!-- <style>
 	main {
 		align-items: center;
 		align-content: center;
 		justify-content: center;
 	}
-</style>
+</style> -->
