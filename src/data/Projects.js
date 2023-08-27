@@ -6,37 +6,37 @@ export const Projects = [
 	{
 		id: "awes-proj-1",
 		title: "Awesome Project #1",
-		img: placeholderImg,
+		img: "/covers/coffee_2.jpg",
 		desc: placeholderDesc
 	},
 	{
 		id: "awes-proj-2",
 		title: "Awesome Project #2",
-		img: placeholderImg,
+		img: "/covers/sky_2.jpg",
 		desc: placeholderDesc
 	},
 	{
 		id: "awes-proj-3",
 		title: "Awesome Project #3",
-		img: placeholderImg,
+		img: "/covers/coffee_3.jpg",
 		desc: placeholderDesc
 	},
 	{
 		id: "cool-proj-1",
 		title: "Cool Project #1",
-		img: placeholderImg,
+		img: "/covers/sky_1.jpg",
 		desc: placeholderDesc
 	},
 	{
 		id: "cool-proj-2",
 		title: "Cool Project #2",
-		img: placeholderImg,
+		img: "/covers/coffee_1.jpg",
 		desc: placeholderDesc
 	},
 	{
 		id: "cool-proj-3",
 		title: "Cool Project #3",
-		img: placeholderImg,
+		img: "/covers/sky_3.jpg",
 		desc: placeholderDesc
 	},
 
