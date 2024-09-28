@@ -1,6 +1,6 @@
 # Awesome Astro: _now with <span style="color:orange">EsLint</span>_
 
-_<span style="color:#BBB">A template by <span style="color:#777">@DaBretema</span></span>_
+_<span style="color:#BBB">A template by <span style="color:#777">@byBretema</span></span>_
 
 ![template-screenshot](./docs/template-screenshot.png)
 
@@ -16,7 +16,7 @@ _<span style="color:#BBB">A template by <span style="color:#777">@DaBretema</spa
 
    ```bash
    # Clone
-   git clone git@github.com:<your-user>/<your-repo>.git
+   git clone git@github.com:<your-awesome-user>/<your-awesome-repo>.git
 
    # Install packages
    pnpm install
@@ -28,7 +28,7 @@ _<span style="color:#BBB">A template by <span style="color:#777">@DaBretema</spa
 
 ```bash
 # Clone
-git clone git@github.com:DaBretema/my-website.git --depth 1
+git clone git@github.com:byBretema/astro-eslint-template.git --depth 1
 cd my-website
 rm -rf .git
 
